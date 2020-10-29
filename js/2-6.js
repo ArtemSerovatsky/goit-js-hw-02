@@ -1,21 +1,23 @@
-let numbers = [];
+"use strict";
+
 let input;
+const numbers = [];
 let total = 0;
 
 do {
-  input = prompt("введите число!", 0);
+  input = prompt("Введите число");
   if (input !== null) {
-    if (Number.isNaN(Number(input))) {
-      alert("Было введено не число, попробуйте еще раз");
+    if (Number.isNaN(+input)) {
+      alert("Вы ввели не число");
       continue;
     }
-
     numbers.push(+input);
   }
 } while (input !== null);
-if (numbers.length !== 0) {
-  for (let number of numbers) {
-    total += +number;
+
+if (numbers.length) {
+  for (const number of numbers) {
+    total += number;
   }
 }
 

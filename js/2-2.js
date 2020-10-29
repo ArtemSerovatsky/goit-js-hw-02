@@ -14,3 +14,11 @@ console.log(
     20
   )
 );
+
+console.log(
+  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 40)
+);
+
+console.log(
+  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
+);
